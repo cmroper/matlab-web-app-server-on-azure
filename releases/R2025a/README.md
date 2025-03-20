@@ -60,7 +60,7 @@ To run applications on MATLAB Web App Server, you need to create applications us
 # Create Endpoint in Virtual Network
 If are using an existing virtual network, then you must manually add a private or service endpoint to the virtual network in order to access the storage account. Service Endpoints enable private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet. For more details, see [Virtual Network service endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview).
 1. In the Azure Portal, click **Resource groups** and select the virtual network for this deployment.
-1. In the left navigation menu, expand the "Settings" category.<ul><li>If you set the template parameter **Assign Public IP Address to VM Hosting MATLAB Web App Server** to "Yes", then click "Service endpoints".</li><li>If you set the template parameter **Assign Public IP Address to VM Hosting MATLAB Web App Server** to "No", then click "Private endpoints".</li></ul>
+1. In the left navigation menu, expand the **Settings** category.<ul><li>If you set the template parameter **Assign Public IP Address to VM Hosting MATLAB Web App Server** to `Yes`, then click "Service endpoints".</li><li>If you set the template parameter **Assign Public IP Address to VM Hosting MATLAB Web App Server** to `No`, then click "Private endpoints".</li></ul>
 1. Click "Add" to add the new endpoint. It must have the following parameters:
 
     |         |                     |
