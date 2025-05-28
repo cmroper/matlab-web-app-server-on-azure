@@ -21,19 +21,18 @@ Deploying MATLAB Web App Server on Azure automatically deploys a network license
 
 # Deploy Reference Architecture for Your Release
 To deploy the reference architecture, select your MATLAB Web App Server release from the table and follow the instructions to deploy the server using the provided template. 
-| Release | Supported MATLAB Runtime Versions |
-| ------- | --------------------------------- |
-| [R2025a](releases/R2025a/README.md) | R2025a, R2024b, R2024a, R2023b, R2023a*, R2022b* |
-| [R2024b](releases/R2024b/README.md) | R2024b, R2024a, R2023b, R2023a*, R2022b*, R2022a* |
-| [R2024a](releases/R2024a/README.md) | R2024a, R2023b, R2023a, R2022b, R2022a, R2021b |
-| [R2023b](releases/R2023b/README.md) | R2023b, R2023a, R2022b, R2022a, R2021b |
-| [R2023a](releases/R2023a/README.md) | R2023a, R2022b, R2022a, R2021b, R2021a, R2020b |
-| [R2022b](releases/R2022b/README.md) | R2022b, R2022a, R2021b, R2021a, R2020b, R2020a |
+| Release | Supported MATLAB Runtime Versions | Status |
+| ------- | --------------------------------- | ------ |
+| [R2025a](releases/R2025a/README.md) | R2025a, R2024b, R2024a, R2023b, R2023a*, R2022b* | ✅ Template available. |
+| [R2024b](releases/R2024b/README.md) | R2024b, R2024a, R2023b, R2023a*, R2022b*, R2022a* | ✅ Template available. |
+| [R2024a](releases/R2024a/README.md) | R2024a, R2023b, R2023a, R2022b, R2022a, R2021b | ✅ Template available. |
+| [R2023b](releases/R2023b/README.md) | R2023b, R2023a, R2022b, R2022a, R2021b | ⚠️ Template will be removed in March 2026. |
+| [R2023a](releases/R2023a/README.md) | R2023a, R2022b, R2022a, R2021b, R2021a, R2020b | ⚠️ Template will be removed in September 2025. |
 
 > [!WARNING]
 > \*When the server is configured to use MATLAB Runtime versions prior to R2023b, the `unsafe-inline` attribute is set in the `script-src` directive of the server's Content Security Policy on the server and cannot be removed. The attribute allows inline JavaScript execution and event handlers contained within a web app to execute on the server. These runtimes are disabled by default starting in R2024b. You can enable them using the [webapps-runtime](https://www.mathworks.com/help/webappserver/ref/webappsruntime.html) command.
 
-MathWorks provides templates for only the six most recent releases of MATLAB Web App Server. Earlier templates are removed and are no longer supported.
+MathWorks provides templates for only the five most recent releases of MATLAB Web App Server. Earlier templates are removed and are no longer supported.
 
 # Architecture and Resources
 Deploying this reference architecture creates several resources in your
